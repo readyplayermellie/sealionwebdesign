@@ -1,5 +1,12 @@
 <template>
   <div>
-    <NuxtWelcome />
+    <Header />
+    <main>
+      <Intro />
+      <Services />
+      <About />
+      <Contact />
+    </main>
+    <Footer />
   </div>
 </template>

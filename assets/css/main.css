@@ -1,0 +1,166 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat:wght@100..900&family=Nunito:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    background-color: #090C22;
+    color: #FEF9D4;
+    scroll-behavior: smooth;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h3,
+h4,
+p,
+a,
+li,
+span,
+label {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.handwritten {
+    font-family: "Licorice", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    color: #0FAFB3;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p,
+span,
+a,
+li,
+button,
+label {
+    font-size: 0.85rem;
+}
+
+img {
+    height: 256px;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.contact-button {
+    @apply px-3;
+    @apply py-1;
+    @apply border;
+    @apply rounded-md;
+    border-color: #FF832B;
+    color: #FEF9D4;
+    background-color: #FF832B;
+}
+
+.contact-button:hover {
+    background-color: #EA6405;
+    border-color: #EA6405;
+}
+
+a:hover,
+a:active,
+.service-buttons:hover,
+.service-buttons:active,
+.active,
+.service-labels:hover {
+    border-bottom: 1px solid #FF832B;
+    cursor: pointer;
+}
+
+a:active {
+    font-size: bold;
+}
+
+.social-icon:hover,
+.social-icon:active,
+.contact-btn:hover,
+.contact-btn:active {
+    border: none;
+}
+
+#about,
+#service-container {
+    background-color: rgb(15 175 179 / 41%);
+}
+
+#about-content,
+#intro-content {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+nav {
+    background-color: rgb(15 175 179 / 34%);
+    color: #090C22;
+}
+
+header {
+    width: 100vw;
+    height: 95vh;
+    background-image: url(assets/content/header.png);
+    background-size: cover;
+}
+
+#header-content h1,
+#header-content h2 {
+    color: #090C22;
+    margin-left: 10%;
+}
+
+#header-content h1 {
+    margin-top: 150px;
+}
+
+#header-content h2 {
+    padding-bottom: 100px;
+}
+
+#about-bubble {
+    margin-bottom: -11rem;
+}
+
+input[type=radio] {
+    opacity: 0;
+}
+
+.intro-item-title {
+    @apply mb-2;
+    @apply pb-2;
+    border-bottom: 1px solid #0FAFB3;
+}
+
+.arrows {
+    width: 20px;
+    height: 20px;
+}

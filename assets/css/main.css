@@ -48,11 +48,11 @@ label {
 
 h3 {
     color: #0FAFB3;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 p,
@@ -61,10 +61,10 @@ a,
 li,
 button,
 label {
-    font-size: 0.85rem;
+    font-size: 1rem;
 }
 
-img {
+.bubble {
     height: 256px;
 }
 
@@ -102,6 +102,11 @@ a:active {
     font-size: bold;
 }
 
+.social-icon-img {
+    @apply h-4;;
+    @apply w-4;
+}
+
 .social-icon:hover,
 .social-icon:active,
 .contact-btn:hover,
@@ -126,7 +131,6 @@ nav {
 }
 
 header {
-    width: 100vw;
     height: 95vh;
     background-image: url(assets/content/header.png);
     background-size: cover;

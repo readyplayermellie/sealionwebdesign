@@ -6,16 +6,17 @@
         </div>
         <div id="intro-content">
             <div class="flex justify-center items-center mb-14" v-for="(item, index) in contentItems" :key="index">
-                <img v-if="item.left" src="/assets/content/bubble.png" class="h-36 item-img-left bubbles">
-                <div class="w-64">
+                <img v-if="item.left" src="/assets/content/bubble.png" class="h-36 item-img-left bubbles hidden lg:block">
+                <div class="w-64 text-center lg:text-left">
                     <h4 class="intro-item-title">{{ item.title }}</h4>
                     <p>{{ item.text }}</p>
                 </div>
-                <img v-if="!item.left" src="/assets/content/bubble.png" class="h-36 bubbles">
+                <img v-if="!item.left" src="/assets/content/bubble.png" class="h-36 bubbles hidden lg:block">
             </div>
         </div>
         <div class="text-center">
-            <h4>Sea Lion Web Design werkt hard aan een positieve impact op de wereld. <br> Naast de bewuste keuzes tijdens de websiteontwikkeling, doneer ik elk jaar 5% van mijn inkomsten aan een goed doel. In 2024 is dit:</h4>
+            <h4>Sea Lion Web Design werkt hard aan een positieve impact op de wereld.</h4>
+            <p>Naast de bewuste keuzes tijdens de websiteontwikkeling, doneer ik elk jaar 5% van mijn inkomsten aan een goed doel. In 2024 is dit:</p>
             <a href="https://www.dierenambulance-amsterdam.nl/" target="_blank" class="group flex py-8 inline-block justify-center dieren-link">
                 <img src="/assets/content/arrow.png" class="mr-2 group-hover:ml-2 arrows">
                 <span>Dierenambulance Amsterdam</span>

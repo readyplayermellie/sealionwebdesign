@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header class="w-full">
         <nav class="flex justify-between items-center px-10">
             <span>{{ logoContent }}</span>
             <ul class="flex items-center">

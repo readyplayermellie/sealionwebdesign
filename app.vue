@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <Header />
-    <main>
-      <Intro />
-      <Services />
-      <About />
-      <Contact />
-    </main>
-    <Footer />
-  </div>
+  <Header />
+  <main>
+    <Intro />
+    <Services />
+    <About />
+    <Contact />
+  </main>
+  <Footer />
 </template>

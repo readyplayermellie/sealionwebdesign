@@ -8,4 +8,6 @@ Visit the website at [sealionwebdesign.com](https://www.sealionwebdesign.com)
 
 ### Changelog
 
+**1.1.0** Initial responsive version
+
 **1.0.0** First major version created and deployed

@@ -1,7 +1,7 @@
 <template>
     <section id="about">
-        <div id="about-content" class="flex py-10 items-center">
-            <div class="whitespace-nowrap pr-14">
+        <div id="about-content" class="flex flex-col lg:flex-row py-10 items-center">
+            <div class="whitespace-nowrap pr-14 mb-8">
                 <h3>DE DEVELOPER</h3>
                 <h2>OVER MIJ</h2>
             </div>
@@ -21,7 +21,7 @@
                 </div>
                 <p class="handwritten text-2xl text-right pr-4">Liefs, Melanie</p>
             </div>
-            <img src="/assets/content/bubble.png" id="about-bubble">
+            <img src="/assets/content/bubble.png" id="about-bubble" class="hidden xl:block">
         </div>
       </section>
 </template>

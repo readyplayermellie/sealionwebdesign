@@ -2,8 +2,8 @@
     <section id="services" class="text-center">
         <h3>DIT BIED IK AAN</h3>
         <h2 class="mb-6">DIENSTEN</h2>
-        <fieldset class="flex justify-center mb-10">
-            <div v-for="(item, index) in serviceItems" :key="index" class="px-3">
+        <fieldset class="flex flex-wrap justify-center mb-10">
+            <div v-for="(item, index) in serviceItems" :key="index" class="px-3 mb-3">
                 <input
                     type="radio"
                     name="service"
@@ -15,8 +15,8 @@
             </div>
         </fieldset>
         <div class="flex justify-center">
-            <img src="/assets/content/bubble.png" class="mr-14">
-            <div class="w-96 h-96 rounded-lg" id="service-container">
+            <img src="/assets/content/bubble.png" class="mr-14 bubble hidden lg:block">
+            <div class="w-96 min-h-80 rounded-lg" id="service-container">
                 <div class="p-7">
                     <h4 class="mb-2"><b>{{ selectedService.title }}</b></h4>
                     <p class="text-left mb-6">{{ selectedService.content }}</p>

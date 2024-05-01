@@ -3,7 +3,7 @@
         <nav class="flex justify-between items-center px-10">
             <span>{{ logoContent }}</span>
             <ul class="flex items-center">
-                <li v-for="(item, index) in navItems" :key="index" class="px-3"><a :href="item.link">{{ item.text }}</a></li>
+                <li v-for="(item, index) in navItems" :key="index" class="px-3 hidden md:inline"><a :href="item.link">{{ item.text }}</a></li>
                 <a :href="btn.link" class="contact-btn my-4 ml-3"><button class="contact-button">{{ btn.text }}</button></a>
             </ul>
         </nav>

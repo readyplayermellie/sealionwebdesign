@@ -36,17 +36,17 @@ export default {
         return {
             serviceItems: [
                 {
-                    title: 'Wordpress',
-                    content: 'Voor als je zelf alle touwtjes in handen wilt houden, komt Wordpress heel goed van pas! We maken een passend design, zetten de Wordpress-website op en zorgen ervoor dat je daarna zelf verder kunt. Natuurlijk kan ik je ook supporten met het onderhoud.',
+                    title: 'Wordpress of Wix',
+                    content: 'Voor als je zelf alle touwtjes in handen wilt houden, bieden Wordpress en Wix een uitkomst! We maken een passend design, zetten de website op en zorgen ervoor dat je daarna zelf verder kunt. Natuurlijk kan ik je ook supporten met het onderhoud.',
                     pointers: ['Handige CMS voor al je content', 'Responsive & Accessible', 'Veel plugins, dus veel mogelijkheden', 'De touwtjes zelf in handen', 'Makkelijk in gebruik'],
                 },
                 {
-                    title: 'Website',
-                    content: 'Als je geen Wordpress nodig hebt, omdat je bijvoorbeeld geen CMS nodig hebt, bouw ik een unieke, responsieve maatwerk-website voor je. Met Nuxt en Tailwind CSS maak ik creatieve websites die precies voldoen aan de wensen. Volledig customizable, maar dan een stuk lichter.',
+                    title: 'Maatwerk website',
+                    content: 'Als Wordpress of Wix niet zo interessant voor je is, omdat je bijvoorbeeld geen CMS nodig hebt, bouw ik een unieke, responsieve maatwerk-website voor je. Met Nuxt en Tailwind CSS maak ik creatieve websites die precies voldoen aan de wensen. Volledig customizable, maar dan een stuk lichter.',
                     pointers: ['Unieke website', 'Zo groot of zo klein als je maar wil'],
                 },
                 {
-                    title: 'Dev Support',
+                    title: 'Developer Support',
                     content: 'Als gepassioneerde developer los ik graag vraagstukken op. Dus sta je voor een uitdaging die niets met websiteontwikkeling te maken heeft, bel me dan direct! Als je bijvoorbeeld een scriptje zoekt voor Zapier, of een stukje Javascript voor je nieuwsbrief, of voor langere tijd ondersteuning nodig hebt bij een project',
                     pointers: ['Korte klusjes', 'Langdurige projecten', 'Front-end', 'Scripts'],
                 },
@@ -66,7 +66,7 @@ export default {
                     pointers: ['Ruim aanbod aan onderhoud', 'Eenmalig of maandelijks', 'Voor allerlei tools en technologie, zoals Wordpress, Google, Microsoft, hosting, domeinen en custom made websites.'],
                 }
             ],
-            checkedService: 'Wordpress'
+            checkedService: 'Wordpress of Wix'
         }
     },
     computed: {

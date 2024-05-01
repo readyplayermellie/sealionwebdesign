@@ -44,7 +44,7 @@ export default {
                 },
                 {
                     title: 'DUURZAAM',
-                    text: 'Op een duurzamere manier websites bouwen en technologie gebruiken, dat is waar Sea Lion Web Design voor staat. Geen grote complexe website bouwen als de situatie vraagt om een simpele, maar effectieve pagina.Een groenere hostingpartij kiezen. Het energieverbruik van een website onder controle houden. Kleine bewegingen met groot effect.',
+                    text: 'Op een duurzamere manier websites bouwen en technologie gebruiken, dat is waar Sea Lion Web Design voor staat. Geen grote complexe website bouwen als de situatie vraagt om een simpele, maar effectieve pagina. Een groenere hostingpartij kiezen. Het energieverbruik van een website onder controle houden. Kleine bewegingen met groot effect.',
                     left: false
                 }
             ]

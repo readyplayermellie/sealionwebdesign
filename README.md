@@ -8,6 +8,8 @@ Visit the website at [sealionwebdesign.com](https://www.sealionwebdesign.com)
 
 ### Changelog
 
+**1.3.0** SEO adjustments
+
 **1.2.0** Changed responsiveness of header & added links
 
 **1.1.0** Initial responsive version

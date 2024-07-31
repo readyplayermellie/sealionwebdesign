@@ -4,14 +4,11 @@
             <h3>{{ subtitle }}</h3>
             <h2>{{ title }}</h2>
         </div>
-        <div id="intro-content">
-            <div class="flex justify-center items-center mb-14" v-for="(item, index) in contentItems" :key="index">
-                <img v-if="item.left" src="/assets/content/bubble.png" class="h-36 item-img-left bubbles hidden lg:block">
-                <div class="w-64 text-center lg:text-left">
-                    <h4 class="intro-item-title">{{ item.title }}</h4>
-                    <p>{{ item.text }}</p>
-                </div>
-                <img v-if="!item.left" src="/assets/content/bubble.png" class="h-36 bubbles hidden lg:block">
+        <div id="intro-content" class="flex flex-col justify-center lg:flex-row">
+            <div class="mb-14 lg:mr-12 lg:ml-12 w-56 text-center lg:text-left" v-for="(item, index) in contentItems" :key="index">
+                <img src="/assets/content/bubble.png" class="h-36 item-img-left bubbles hidden lg:block">
+                <h4 class="intro-item-title">{{ item.title }}</h4>
+                <p>{{ item.text }}</p>
             </div>
         </div>
         <div class="text-center">
@@ -33,12 +30,12 @@ export default {
             subtitle: 'HOE IK INDRUK EN IMPACT MAAK MET',
             contentItems: [
                 {
-                    title: 'HET WEB',
+                    title: 'WEBSITE',
                     text: 'Mooie, doordachte websites met een handige CMS voor al je content of juist een duidelijke landingspagina met een kort contactformulier. Iedere website komt met eigen wensen, een eigen design en een eigen aanpak. Toch hebben ze allemaal wat gemeen: toegankelijk voor iedereen en elk apparaat en gebouwd met het oog op de toekomst.',
                     left: false
                 },
                 {
-                    title: 'DEVELOPER IN HART EN NIEREN',
+                    title: 'DEVELOPER',
                     text: 'Van goedwerkende applicaties bedenken en maken tot mensen helpen met het oplossen van software-uitdagingen. Ik doe (bijna) niets liever dan met mijn neus in de code duiken. Als gepassioneerde developer denk ik graag mee met de uitdagingen waar je voor staat.',
                     left: true
                 },

@@ -5,7 +5,7 @@
             <h2 id="hero-subtitle" class="mb-8">{{ sectionSubTitle }}</h2>
             <a class="btn btn-primary mt-8" href="/#services">{{ buttonText }}</a>
         </div>
-        <img src="../assets/content/dividers/waves/Blue-to-sand/sand-waves-one.svg" class="w-full">
+        <img src="/assets/content/dividers/waves/Blue-to-sand/sand-waves-one.svg" class="w-full">
     </section>
 </template>
 

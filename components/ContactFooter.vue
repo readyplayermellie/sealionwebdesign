@@ -11,7 +11,7 @@
                 <p>Stuur een mailtje naar <a href="mailto:hello@sealionwebdesign.com">hello@sealionwebdesign.com</a></p>
             </div>
         </div>
-        <img src="../assets/content/dividers/waves/sand-to-blue/green-waves-one.svg" class="w-screen">
+        <img src="/assets/content/dividers/waves/sand-to-blue/green-waves-one.svg" class="w-screen">
     </section>
     <div id="footer-links-section" class="mb-20">
         <FooterItems class="flex justify-between" id="general-footer"/>

@@ -3,7 +3,7 @@
         <div class="small-content-container">
             <h2>{{ title }}</h2>
         </div>
-        <img src="../assets/content/dividers/waves/blue-to-sand/sand-waves-one.svg" class="w-full">
+        <img src="/assets/content/dividers/waves/blue-to-sand/sand-waves-one.svg" class="w-full">
     </section>
 </template>
 

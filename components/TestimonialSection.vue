@@ -15,7 +15,7 @@
             </div>
             <img src="~/assets/content/decoration/jellyfish-group.png" class="w-2/5">
         </div>
-        <img src="~/assets/content/dividers/waves/blue-to-sand/sand-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/Blue-to-sand/sand-waves-one.svg" class="w-full">
     </section>
 </template>
 

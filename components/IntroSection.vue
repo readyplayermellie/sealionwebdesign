@@ -7,7 +7,7 @@
             </div>
         <img src="~/assets/content/decoration/jellyfish-pink.png" id="jelly-img">
         </div>
-        <img src="~/assets/content/dividers/waves/blue-to-pink/pink-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/Blue-to-pink/pink-waves-one.svg" class="w-full">
     </section>
 </template>
 

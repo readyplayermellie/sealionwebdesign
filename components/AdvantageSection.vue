@@ -13,7 +13,7 @@
             </div>
             <a href="#contact" class="btn btn-tertiary">{{ buttonText }}</a>
         </div>
-        <img src="~/assets/content/dividers/waves/pink-to-blue/blue-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/Pink-to-blue/blue-waves-one.svg" class="w-full">
     </section>
 </template>
 

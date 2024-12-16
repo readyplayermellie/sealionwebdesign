@@ -1,182 +1,185 @@
 /* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat:wght@100..900&family=Nunito:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Raleway:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* variables */
+:root {
+    --color-font-light: #F0F4F7;
+    --color-font-dark: #090C22;
+    --bkg-dark: #090C22;
+    --bkg-pink: #DD4261;
+    --bkg-light: #E2D6B9;
+    --bkg-white: #F0F4F7;
+    --btn-primary: #DD4261;
+    --btn-secondary: #4A7C6D;
+    --btn-tertiary: #C0274E;
+}
+
 html {
-    background-color: #090C22;
-    color: #FEF9D4;
+    background-color: var(--bkg-dark);
     scroll-behavior: smooth;
-    display: inline-block;
+}
+
+/* Font setup */
+h1, h2, h4 {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h3, p, button, li, a, span, #hero-subtitle {
+    font-family: "Lato", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+.italic-text {
+    font-style: italic;
 }
 
 h1 {
-    font-size: 3rem;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+    font-size: 68px;
 }
 
 h2 {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+    font-size: 42px;
 }
 
-h3,
-h4,
-p,
-a,
-li,
-span,
-label {
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
+h3, #hero-subtitle {
+    font-size: 28px;
 }
 
-.handwritten {
-    font-family: "Licorice", cursive;
-    font-weight: 400;
-    font-style: normal;
+h4 {
+    font-size: 20px;
 }
 
-h3 {
-    color: #0FAFB3;
-    font-size: 1.5rem;
-}
-
-h2 {
-    font-size: 1.8rem;
-}
-
-p,
-span,
-a,
-li,
-button,
-label {
-    font-size: 1rem;
-}
-
-.bubble {
-    height: 256px;
-}
-
+/* Section setup */
 section {
-    margin-top: 50px;
-    margin-bottom: 200px;
+    min-height: 60vh;
 }
 
-.contact-button {
-    @apply px-3;
-    @apply py-1;
-    @apply border;
-    @apply rounded-md;
-    border-color: #FF832B;
-    color: #FEF9D4;
-    background-color: #FF832B;
+#website-header-section {
+    min-height: 10vh;
 }
 
-.contact-button:hover {
-    background-color: #EA6405;
-    border-color: #EA6405;
+.content-container {
+    padding: 5% 0%;
+    min-height: 50vh;
+    max-width: 1024px;
+    margin: auto;
 }
 
-a:hover,
-a:active,
-.service-buttons:hover,
-.service-buttons:active,
-.active,
-.service-labels:hover {
-    border-bottom: 1px solid #FF832B;
-    cursor: pointer;
+.small-content-container {
+    padding: 5% 0%;
+    max-width: 1024px;
+    margin: auto;
 }
 
-a:active {
-    font-size: bold;
+/* Section background colors */
+#advantages-section, #more-testimonials-section {
+    background-color: var(--bkg-pink);
+    color: var(--color-font-light);
 }
 
-.social-icon-img {
-    @apply h-4;;
-    @apply w-4;
+#hero-section, #intro-section, #testimonial-section, nav, #website-header-section, #package-section, #second-footer-section, #footer-links-section {
+    background-color: var(--bkg-dark);
+    color: var(--color-font-light);
 }
 
-.social-icon:hover,
-.social-icon:active,
-.contact-btn:hover,
-.contact-btn:active {
-    border: none;
+#contact-footer-section, #services-section, #more-advantages-section, #about-section, #smaller-footer-section {
+    background-color: var(--bkg-light);
+    color: var(--color-font-dark);
 }
 
-#about,
-#service-container {
-    background-color: rgb(15 175 179 / 41%);
+/* Buttons */
+.btn {
+    padding: 10px 25px;
+    color: var(--color-font-light);
+    border-radius: 50px;
 }
 
-#about-content,
-#intro-content {
-    margin-left: 15%;
-    margin-right: 15%;
+.btn-primary {
+    background-color: var(--btn-primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--btn-tertiary);
+}
+
+.btn-secondary {
+    background-color: var(--btn-secondary);
+}
+
+.btn-tertiary {
+    background-color: var(--btn-tertiary);
 }
 
 nav {
-    background-color: rgb(15 175 179 / 34%);
-    color: #090C22;
+    position: sticky;
+    top: 0;
 }
 
-header {
-    height: 95vh;
-    background-image: url(assets/content/header.png);
-    background-size: cover;
+#service-item, #advantage-item {
+    background-color: var(--bkg-white);
+    min-height: 200px;
+    max-height: 500px;
+    border-radius: 20px;
 }
 
-#header-content h1,
-#header-content h2 {
-    color: #090C22;
-    margin-left: 10%;
+#general-footer {
+    background-color: var(--bkg-dark);
+    color: var(--color-font-light);
+    max-width: 1024px;
+    margin: auto;
 }
 
-#header-content h1 {
-    margin-top: 150px;
+#smaller-footer-items {
+    background-color: var(--bkg-light);
+    color: var(--color-font-dark);
+    max-width: 1024px;
+    margin: auto;
 }
 
-#header-content h2 {
-    padding-bottom: 100px;
+#advantage-item, .package-item {
+    color: var(--color-font-dark);
 }
 
-#about-bubble {
-    margin-bottom: -11rem;
+.package-item li {
+    list-style-type: disc;
 }
 
-input[type=radio] {
-    opacity: 0;
+#jelly-img {
+    height: 500px;
 }
 
-.intro-item-title {
-    @apply mb-2;
-    @apply pb-2;
-    border-bottom: 1px solid #0FAFB3;
+.card-border-pink {
+    border: 1px solid var(--bkg-pink);
+}
+.card-border-blue {
+    border: 1px solid var(--bkg-dark);
 }
 
-.arrows {
-    width: 20px;
-    height: 20px;
+#smaller-footer {
+    margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 600px) {
-    #header-content h1,
-    #header-content h2 {
-      margin-left: 5%;
-      margin-right: 5%;
-      text-align: center;
-    }
-    #header-content h1 {
-        margin-top: 65px;
-    }
-  }
+#footer-content {
+    background-color: var(--bkg-light);
+    color: var(--color-font-dark);
+}
+
+/* Hover behavior */
+.btn-primary:hover {
+    background-color: var(--btn-tertiary);
+}
+.btn-secondary:hover {
+    background-color: var(--bkg-dark);
+}

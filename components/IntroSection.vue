@@ -5,9 +5,9 @@
                 <h2>{{ sectionTitle }}</h2>
                 <p v-for="(item, index) in sectionContent" :key="index" class="mt-4 leading-loose">{{ item }}</p>
             </div>
-        <img src="/assets/content/decoration/jellyfish-pink.png" id="jelly-img">
+        <img src="~/assets/content/decoration/jellyfish-pink.png" id="jelly-img">
         </div>
-        <img src="/assets/content/dividers/waves/blue-to-pink/pink-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/blue-to-pink/pink-waves-one.svg" class="w-full">
     </section>
 </template>
 

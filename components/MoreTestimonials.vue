@@ -14,7 +14,7 @@
                 </div>
             </div>
         </div>
-        <img src="/assets/content/dividers/waves/Pink-to-blue/blue-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/Pink-to-blue/blue-waves-one.svg" class="w-full">
     </section>
 </template>
 

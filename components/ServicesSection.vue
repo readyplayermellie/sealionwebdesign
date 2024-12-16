@@ -14,7 +14,7 @@
             </div>
             <NuxtLink href="/website-maken" class="btn btn-secondary">{{ buttonText }}</NuxtLink>
         </div>
-        <img src="/assets/content/dividers/waves/sand-to-blue/green-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/sand-to-blue/green-waves-one.svg" class="w-full">
     </section>
 </template>
 

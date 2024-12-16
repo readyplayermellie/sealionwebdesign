@@ -6,11 +6,11 @@
                 <h2>{{ title }}</h2>
             </div>
             <div class="flex mb-20">
-                <img src="/assets/content/decoration/seal.jpg" class="rounded-lg w-1/3">
+                <img src="~/assets/content/decoration/seal.jpg" class="rounded-lg w-1/3">
                 <p class="pl-4">{{ content }}</p>
             </div>
         </div>
-        <img src="/assets/content/dividers/waves/Sand-to-blue/green-waves-one.svg" class="w-full">
+        <img src="~/assets/content/dividers/waves/Sand-to-blue/green-waves-one.svg" class="w-full">
     </section>
 </template>
 

@@ -6,12 +6,20 @@
     <SecondFooter />
 </template>
 
-<script>
-export default {
-    data() {
-        return {
-            title: 'Jouw zakelijke website waar de passie vanaf spat'
-        }
+<script setup>
+const title = ref('Jouw zakelijke website waar de passie vanaf spat');
+useHead({
+  script: [ 
+    { 
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-KG0F9FTQNX'
+    },
+    {
+      innerHTML: `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KG0F9FTQNX');`
     }
-}
+  ]
+})
 </script>

@@ -1,11 +1,11 @@
 <template>
     <section id="package-section">
         <div class="content-container">
-            <div class="mb-20">
+            <div class="mb-16">
                 <h3>{{ subtitle }}</h3>
                 <h2>{{ title }}</h2>
             </div>
-            <div class="flex mb-20">
+            <div class="flex mb-12">
                 <div v-for="(item, index) in packageItems" :key="index" id="service-item" class="w-full mr-4 p-4 package-item">
                     <h4 class="mt-2 mb-2">{{ item.title }}</h4>
                     <p>{{ item.subtitle }}</p>

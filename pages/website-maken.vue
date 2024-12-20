@@ -1,5 +1,5 @@
 <template>
-    <SmallerHeaderSection :title="title" />
+    <SmallerHeaderSection />
     <WebsiteSection />
     <PackageSection />
     <MoreTestimonials />
@@ -7,7 +7,6 @@
 </template>
 
 <script setup>
-const title = ref('Jouw zakelijke website waar de passie vanaf spat');
 useHead({
   script: [ 
     { 

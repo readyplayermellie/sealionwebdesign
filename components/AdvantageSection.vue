@@ -1,11 +1,11 @@
 <template>
     <section id="advantages-section">
         <div class="content-container">
-            <div class="mb-20">
+            <div class="mb-16">
                 <h3>{{ subtitle }}</h3>
                 <h2>{{ title }}</h2>
             </div>
-            <div class="flex flex-wrap mb-20">
+            <div class="flex flex-wrap mb-8">
                 <div v-for="(item, index) in advantageItems" :key="index" id="advantage-item" class="w-1/4 mr-4 p-4 mb-4">
                     <h4 class="mt-2 mb-2">{{ item.title }}</h4>
                     <p class="mb-4">{{ item.content }}</p>

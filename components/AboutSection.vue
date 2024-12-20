@@ -1,11 +1,11 @@
 <template>
     <section id="about-section">
         <div class="content-container">
-            <div class="mb-20">
+            <div class="mb-8">
                 <h3>{{ subtitle }}</h3>
                 <h2>{{ title }}</h2>
             </div>
-            <div class="flex mb-20">
+            <div class="flex">
                 <img src="~/assets/content/decoration/seal.jpg" class="rounded-lg w-1/3">
                 <p class="pl-4">{{ content }}</p>
             </div>

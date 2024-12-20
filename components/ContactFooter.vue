@@ -8,12 +8,12 @@
             </div>
             <div class="flex">
                 <!-- <ContactForm class="w-1/2"/> -->
-                <p>Stuur een mailtje naar <a href="mailto:hello@sealionwebdesign.com">hello@sealionwebdesign.com</a></p>
+                <p>Stuur een mailtje naar <a href="mailto:hello@sealionwebdesign.com" class="underline underline-offset-2">hello@sealionwebdesign.com</a></p>
             </div>
         </div>
         <img src="~/assets/content/dividers/waves/Sand-to-blue/green-waves-one.svg" class="w-screen">
     </section>
-    <div id="footer-links-section" class="mb-20">
+    <div id="footer-links-section" class="mb-20 pt-12">
         <FooterItems class="flex justify-between" id="general-footer"/>
     </div>
 </template>

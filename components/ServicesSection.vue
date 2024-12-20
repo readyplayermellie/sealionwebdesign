@@ -2,17 +2,17 @@
     <section id="services-section">
         <a name="services"></a>
         <div class="content-container">
-            <div class="mb-20">
+            <div class="mb-16">
                 <h2>{{ sectionTitle }}</h2>
                 <h3>{{ sectionSubTitle }}</h3>
             </div>
-            <div class="flex mb-20">
+            <div class="flex mb-12">
                 <div v-for="(item, index) in serviceItems" :key="index" id="service-item" class="w-full mr-4 p-4">
                     <h4 class="mt-2 mb-2">{{ item.title }}</h4>
                     <p class="mb-8">{{ item.content }}</p>
                 </div>
             </div>
-            <NuxtLink href="/website-maken" class="btn btn-secondary">{{ buttonText }}</NuxtLink>
+            <NuxtLink href="/website-maken" class="btn btn-primary">{{ buttonText }}</NuxtLink>
         </div>
         <img src="~/assets/content/dividers/waves/Sand-to-blue/green-waves-one.svg" class="w-full">
     </section>

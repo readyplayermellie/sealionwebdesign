@@ -8,6 +8,8 @@ Visit the website at [sealionwebdesign.com](https://www.sealionwebdesign.com)
 
 ### Changelog
 
+**2.0.1** Added design changes
+
 **2.0.0** New design implementation
 
 **1.4.0** Added logo and adjusted intro

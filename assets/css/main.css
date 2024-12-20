@@ -14,8 +14,8 @@
     --bkg-light: #E2D6B9;
     --bkg-white: #F0F4F7;
     --btn-primary: #DD4261;
-    --btn-secondary: #4A7C6D;
-    --btn-tertiary: #C0274E;
+    --btn-secondary: #E2D6B9;
+    --btn-tertiary: #090C22;
 }
 
 html {
@@ -67,7 +67,7 @@ section {
 }
 
 #website-header-section {
-    min-height: 10vh;
+    min-height: 5vh;
 }
 
 .content-container {
@@ -78,7 +78,6 @@ section {
 }
 
 .small-content-container {
-    padding: 5% 0%;
     max-width: 1024px;
     margin: auto;
 }
@@ -108,18 +107,31 @@ section {
 
 .btn-primary {
     background-color: var(--btn-primary);
-}
-
-.btn-primary:hover {
-    background-color: var(--btn-tertiary);
+    font-weight: 700;
 }
 
 .btn-secondary {
     background-color: var(--btn-secondary);
+    color: var(--color-font-dark);
+    font-weight: 700;
 }
 
 .btn-tertiary {
     background-color: var(--btn-tertiary);
+    font-weight: 700;
+}
+
+/* hover behavior */
+.btn-primary:hover {
+    opacity: 0.90;
+}
+
+.btn-secondary:hover {
+    opacity: 0.90;
+}
+
+.btn-tertiary:hover {
+    opacity: 0.90;
 }
 
 nav {
@@ -176,10 +188,7 @@ nav {
     color: var(--color-font-dark);
 }
 
-/* Hover behavior */
-.btn-primary:hover {
-    background-color: var(--btn-tertiary);
-}
-.btn-secondary:hover {
-    background-color: var(--bkg-dark);
+.testimonial-item {
+    background-color: var(--bkg-white);
+    color: var(--color-font-dark);
 }

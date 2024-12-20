@@ -1,20 +1,20 @@
 <template>
     <div>
         <div class="mb-2 w-1/3 pr-24">
-            <h4>{{ outroText.title }}</h4>
+            <h4 class="pb-2">{{ outroText.title }}</h4>
             <p>{{ outroText.content }}</p>
         </div>
         <div class="mb-2">
-            <h4>{{ contactInfo.title }}</h4>
+            <h4 class="pb-2">{{ contactInfo.title }}</h4>
             <div v-for="(item, index) in contactInfo.content" :key="index">
-                <NuxtLink v-if="item.url" :to="item.url">{{ item.title }}</NuxtLink>
+                <NuxtLink v-if="item.url" :to="item.url" class="underline underline-offset-2">{{ item.title }}</NuxtLink>
                 <span v-else>{{ item.title }}</span>
             </div>
         </div>
         <div class="mb-2">
-            <h4>{{ sitemap.title }}</h4>
+            <h4 class="pb-2">{{ sitemap.title }}</h4>
             <div v-for="(item, index) in sitemap.content" :key="index">
-                <NuxtLink v-if="item.url" :to="item.url">{{ item.title }}</NuxtLink>
+                <NuxtLink v-if="item.url" :to="item.url" class="underline underline-offset-2">{{ item.title }}</NuxtLink>
                 <span v-else>{{ item.title }}</span>
             </div>
         </div>
@@ -40,9 +40,10 @@ export default {
                     },
                     {
                         title: 'hello@sealionwebdesign.com',
+                        url: 'mailto:hello@sealionwebdesign.com'
                     },
                     {
-                        title: 'kvk: 00000000',
+                        title: 'KvK: 92265197',
                     },
                     {
                         title: 'Meer over mij',

@@ -1,11 +1,10 @@
 <template>
-    <SmallerHeaderSection :title="title"/>
+    <SmallerHeaderSection />
     <AboutSection />
     <SecondFooter />
 </template>
 
 <script setup>
-const title = ref('Wat is Sea Lion Web Design eigenlijk?');
 useHead({
   script: [ 
     { 

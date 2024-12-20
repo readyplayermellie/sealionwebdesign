@@ -2,7 +2,7 @@
     <section id="intro-section">
         <div class="content-container flex justify-center">
             <div>
-                <h2>{{ sectionTitle }}</h2>
+                <h2 class="mb-4">{{ sectionTitle }}</h2>
                 <p v-for="(item, index) in sectionContent" :key="index" class="mt-4 leading-loose">{{ item }}</p>
             </div>
         <img src="~/assets/content/decoration/jellyfish-pink.png" id="jelly-img">

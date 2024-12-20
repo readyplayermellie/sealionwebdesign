@@ -1,1 +1,0 @@
-import{_ as r,a}from"./SecondFooter.YuHcQe1e.js";import{_ as c,c as _,b as e,F as s,o as l}from"./entry.VIC1vs91.js";import"./FooterItems.aMCh8Zo8.js";const m={data(){return{title:"Algemene voorwaarden"}}};function p(i,d,u,f,t,x){const o=r,n=a;return l(),_(s,null,[e(o,{title:t.title},null,8,["title"]),e(n)],64)}const $=c(m,[["render",p]]);export{$ as default};

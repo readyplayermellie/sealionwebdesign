@@ -1,12 +1,17 @@
 <template>
-    <main>
-      <HeroSection />
-      <ServicesSection />
-      <IntroSection />
-      <AdvantageSection />
-      <TestimonialSection />
-      <ContactFooter />
-    </main>
+  <header>
+    <Header />
+    <SmallBanner />
+  </header>
+  <main>
+    <QuestionSection />
+    <ServiceSection />
+    <TestimonialsSection />
+    <PackageSection />
+    <FAQ />
+    <Contact />
+  </main>
+  <Footer />
   </template>
 
 <script setup>

@@ -1,23 +1,23 @@
 <template>
-    <section id="package-section">
-        <div class="content-container">
-            <div class="mb-16">
-                <h3>{{ subtitle }}</h3>
-                <h2>{{ title }}</h2>
+    <section class="pt-40 pb-40" id="package-section">
+        <a name="prijzen"></a>
+        <div class="container">
+            <div class="pb-4">
+                <h2 class="pb-4 text-3xl">{{ title }}</h2>
+                <p class="pb-4">{{ subtitle }}</p>
             </div>
-            <div class="flex mb-12">
-                <div v-for="(item, index) in packageItems" :key="index" id="service-item" class="w-full mr-4 p-4 package-item">
-                    <h4 class="mt-2 mb-2">{{ item.title }}</h4>
-                    <p>{{ item.subtitle }}</p>
-                    <ul class="ml-5 pt-4 pb-4">
-                        <li v-for="(point, index) in item.specifics" :key="index">{{ point }}</li>
+            <div class="flex w-full flex-wrap">
+                <div v-for="(item, index) in packageContent" :key="index" class="border border-white p-4 w-full sm:w-1/4 sm:m-0 min-w-52">
+                    <h3 class="text-xl mb-4 pb-2 mt-8 border-b border-white">{{ item.title }}</h3>
+                    <p class="mb-2">{{ item.content }}</p>
+                    <ul class="mb-4 pb-2 border-b border-white h-40">
+                        <li v-for="(i, index) in item.list" :key="index" class="package-items text-sm">{{ i }}</li>
                     </ul>
-                    <p class="mb-8 bold-text">Vanaf {{ item.price }}</p>
+                    <p class="mb-8">Vanaf <span class="text-xl font-bold">{{ item.price }}</span></p>
+                    <NuxtLink to="#contact" class="btn btn-primary block text-center w-full">{{ item.buttonText }}</NuxtLink>
                 </div>
             </div>
-            <a href="/#contact" class="btn btn-primary">{{ buttonText }}</a>
         </div>
-        <img src="~/assets/content/dividers/waves/Blue-to-pink/pink-waves-one.svg" class="w-full">
     </section>
 </template>
 
@@ -25,36 +25,61 @@
 export default {
     data() {
         return {
-            title: 'Wat mag dat kosten dan?',
-            subtitle: 'Pakketten voor jouw website en alles daaromheen',
-            buttonText: 'Vraag een vrijblijvende offerte aan',
-            packageItems: [
+            title: 'Prijzen & pakketten',
+            subtitle: 'Goed om te weten: De genoemde prijzen zijn inclusief BTW. Ik hanteer 3 betaaltermijnen, namelijk bij acceptatie offerte, acceptatie design en oplevering.',
+            packageContent: [
                 {
-                    title: 'Web design & website',
-                    subtitle: 'Uniek en op maatgemaakt - pakketprijs',
-                    specifics: ['Uniek design', '1 tot oneindig pagina\'s', 'Wordpress, Wix of zonder platform', 'SEO-check', 'Duurzaamcheck', 'Vanaf oplevering na 1 maand'],
-                    price: '1200'
+                    title: 'Webdesign & ontwikkeling',
+                    content: 'In dit pakket zit standaard:',
+                    list: [
+                        'Uniek design', 
+                        '1 tot oneindig pagina\'s',
+                        'Wordpress, Wix of zonder platform',
+                        'SEO-check',
+                        'Duurzaam-check', 
+                        'Vanaf oplevering na 6 weken'
+                    ],
+                    price: '1295',
+                    buttonText: 'Boek een gratis intake'
                 },
                 {
-                    title: 'Hosting & Support',
-                    subtitle: 'Kom maar op met die problemen - eenmalig of maandelijks',
-                    specifics: ['Duurzamere hostingprovider', 'Thema & plugin updates', 'Meedenken met jouw ideeën', 'E-mailproblemen', 'Domeinnaam regelen', 'Gebroken website fixen'],
-                    price: '50'
+                    title: 'Hosting en technische support',
+                    content: 'Als je hulp nodig hebt bij:',
+                    list: [
+                        'Duurzamere hostingprovider',
+                        'Thema & plugin updates',
+                        'Meedenken met jouw ideeën',
+                        'E-mailproblemen',
+                        'Domeinnaam regelen',
+                        'Gebroken website fixen'
+                    ],
+                    price: '50',
+                    buttonText: 'Schakel me in'
                 },
                 {
-                    title: 'SEO-check',
-                    subtitle: 'Zodat Google jouw publiek naar je stuurt - eenmalig',
-                    specifics: ['Zoekwoordenonderzoek in jouw niche', 'Contentadvies', 'Advies met verbeterpunten', 'Vanaf 2 uur'],
-                    price: '65 per uur'
+                    title: 'Kan-Google-me-vinden-SEO-check',
+                    content: 'In dit pakket zit standaard:',
+                    list: [
+                        'Zoekwoordenonderzoek in jouw niche',
+                        'Contentadvies',
+                        'Advies met verbeterpunten'
+                    ],
+                    price: '199',
+                    buttonText: 'Vraag meer info aan'
                 },
                 {
-                    title: 'Duurzaamcheck',
-                    subtitle: 'Zoveel hebben we toch niet nodig - eenmalig',
-                    specifics: ['Hoe duurzaam is de website nu?', 'Advies met verbeterpunten', 'Implementatie van de verbeteringen', 'Energieverbruiksbanner', 'Vanaf 2 uur'],
-                    price: '65 per uur'
-                },
+                    title: 'Is-mijn-website-duurzaam-check',
+                    content: 'In dit pakket zit standaard:',
+                    list: [
+                        'Advies met verbeterpunten',
+                        'Implementatie van de verbeteringen',
+                        'Energieverbruiksbanner'
+                    ],
+                    price: '199',
+                    buttonText: 'Vraag meer info aan'
+                }
             ]
         }
-    }
+    },
 }
 </script>

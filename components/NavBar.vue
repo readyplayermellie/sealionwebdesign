@@ -1,9 +1,26 @@
 <template>
-    <nav>
-        <ul class="flex p-4 justify-end items-center">
-            <li v-for="(item, index) in navItems" :key="index" class="p-2 mr-4">
-                <a v-if="item.button" href="/#contact" class="btn btn-secondary">{{ item.title }}</a>
-                <NuxtLink v-else :to="item.url">{{ item.title }}</NuxtLink>
+    <nav class="p-8 flex justify-end w-full">
+        <ul class="lg:hidden">
+            <li class="relative"><img src="../assets/icons/hamburger.png" alt="Open mobiel menu" class="w-8 h-8 relative">
+                <ul class="absolute w-72" id="dropdown-menu">
+                    <li v-for="(item, index) in navList" :key="index">
+                        <a :href="item.url" class="p-4 w-72 block">{{ item.title }}</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- <div id="desktop-menu" class="hidden lg:block">
+            <a v-for="(item, index) in navList" :key="index" v-if="item.iconSrc" :href="item.url" class="m-4 pb-2 hover:border-b">
+                <img :src="item.iconSrc" :alt="item.iconAlt">
+            </a>
+            <a else v-for="(item, index) in navList" :key="index" :href="item.url" class="m-4 pb-2 hover:border-b">{{ item.title }}</a>
+        </div> -->
+        <ul id="desktop-menu" class="hidden lg:flex">
+            <li v-for="(item, index) in navList">
+                <a v-if="item.iconSrc" :key="index" :href="item.url" class="p-0">
+                    <img :src="item.iconSrc" :alt="item.iconAlt" class="h-6 w-6 mr-4">
+                </a>
+                <a else :key="index" :href="item.url" class="m-4 pb-2 hover:border-b">{{ item.title }}</a>
             </li>
         </ul>
     </nav>
@@ -13,24 +30,41 @@
 export default {
     data() {
         return {
-            navItems: [
+            navList: [
                 {
-                    title: 'Thuis',
-                    url: '/'
+                    iconSrc: 'icons/sailboat.png',
+                    iconAlt: 'Icoon van een zeilboot als link voor de homepagina',
+                    url: '/',
                 },
                 {
-                    title: 'Website!',
-                    url: '/website-maken'
+                    title: 'Diensten',
+                    url: '/#diensten',
                 },
                 {
-                    title: 'Wie?',
-                    url: 'over'
+                    title: 'Reviews',
+                    url: '/#reviews',
+                },
+                {
+                    title: 'Prijzen en pakketten',
+                    url: '/#prijzen',
+                },
+                {
+                    title: 'Veelgestelde vragen',
+                    url: '/#faq',
                 },
                 {
                     title: 'Contact',
-                    button: true,
+                    url: '/#contact'
                 }
             ]
+        }
+    },
+    methods: {
+        openMobileMenu() {
+            const mobileMenuContainer = document.getElementById('mobile-menu');
+            mobileMenuContainer.classList.contains('closed')
+                ? mobileMenuContainer.classList.remove('closed')
+                : mobileMenuContainer.classList.add('closed');
         }
     }
 }

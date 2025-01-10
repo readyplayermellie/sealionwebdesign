@@ -1,5 +1,6 @@
 {
-  "name": "nuxt-app",
+  "name": "sealionwebdesign",
+  "version": "3.0.0",
   "private": true,
   "type": "module",
   "scripts": {
